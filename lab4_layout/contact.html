@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Layout Sederhana</h1>
+      </header>
+      <nav aria-label="Navigasi utama">
+        <a href="home.html">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active" aria-current="page">Kontak</a>
+      </nav>
+      <section id="hero">
+        <h1>Kontak</h1>
+        <p>
+          Punya pertanyaan atau ingin menyampaikan pesan? Silakan isi formulir
+          berikut.
+        </p>
+      </section>
+      <section id="wrapper">
+        <main id="main">
+          <section class="entry" aria-labelledby="contact-title">
+            <h2 id="contact-title">Kirim Pesan</h2>
+            <p class="form-help">Kolom bertanda * wajib diisi.</p>
+            <form class="contact-form" action="#" method="post">
+              <div class="form-field">
+                <label for="name">
+                  Nama <span class="required-mark">*</span>
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="email">
+                  Email <span class="required-mark">*</span>
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="subject">Subjek</label>
+                <input id="subject" name="subject" type="text" />
+              </div>
+              <div class="form-field">
+                <label for="message">
+                  Pesan <span class="required-mark">*</span>
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                ></textarea>
+              </div>
+              <button class="form-submit" type="submit">Kirim Pesan</button>
+            </form>
+            <p class="contact-note">
+              Formulir ini merupakan contoh layout dan belum terhubung ke
+              layanan pengiriman pesan.
+            </p>
+          </section>
+        </main>
+        <aside id="sidebar">
+          <div class="widget-box">
+            <h3 class="title">Panduan</h3>
+            <ul>
+              <li><a href="#name">Isi nama</a></li>
+              <li><a href="#email">Masukkan email yang valid</a></li>
+              <li><a href="#message">Tuliskan pesan</a></li>
+            </ul>
+          </div>
+          <div class="widget-box">
+            <h3 class="title">Informasi</h3>
+            <p>
+              Nama, email, dan pesan wajib diisi. Subjek bersifat opsional.
+            </p>
+          </div>
+        </aside>
+      </section>
+      <footer>
+        <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+      </footer>
+    </div>
+  </body>
+</html>

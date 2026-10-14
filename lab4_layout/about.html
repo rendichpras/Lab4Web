@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Layout Sederhana</h1>
+      </header>
+      <nav aria-label="Navigasi utama">
+        <a href="home.html">Home</a>
+        <a href="artikel.html">Artikel</a>
+        <a href="about.html" class="active" aria-current="page">About</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+      <section id="hero">
+        <h1>Tentang Saya</h1>
+        <p>
+          Halaman ini berisi profil singkat, hal yang sedang saya pelajari, dan
+          contoh latihan yang saya kerjakan.
+        </p>
+      </section>
+      <section id="wrapper">
+        <main id="main">
+          <section class="entry" aria-labelledby="profile-title">
+            <h2 id="profile-title">Profil Singkat</h2>
+            <p>
+              Saya adalah mahasiswa yang sedang mempelajari pengembangan web.
+              Saya tertarik membuat halaman yang terstruktur, mudah dibaca, dan
+              nyaman digunakan. Melalui praktikum ini, saya berlatih menyusun
+              elemen HTML dan mengatur tampilannya dengan CSS.
+            </p>
+          </section>
+          <section class="entry" aria-labelledby="portfolio-title">
+            <h2 id="portfolio-title">Portofolio Latihan</h2>
+            <p>
+              Berikut beberapa jenis halaman yang menjadi latihan dalam proses
+              belajar saya.
+            </p>
+            <div class="portfolio-grid">
+              <article class="portfolio-card">
+                <h3>Landing Page</h3>
+                <p>
+                  Latihan menyusun area pembuka, navigasi, dan tombol aksi
+                  menggunakan HTML dan CSS.
+                </p>
+              </article>
+              <article class="portfolio-card">
+                <h3>Layout Profil</h3>
+                <p>
+                  Latihan menampilkan informasi singkat dan bagian konten dalam
+                  layout yang rapi.
+                </p>
+              </article>
+              <article class="portfolio-card">
+                <h3>Formulir Kontak</h3>
+                <p>
+                  Latihan menyusun kolom nama, email, dan pesan dengan label
+                  yang jelas.
+                </p>
+              </article>
+            </div>
+          </section>
+        </main>
+        <aside id="sidebar">
+          <div class="widget-box">
+            <h3 class="title">Yang Sedang Dipelajari</h3>
+            <ul>
+              <li><a href="#profile-title">Struktur HTML</a></li>
+              <li><a href="#portfolio-title">Layout CSS</a></li>
+              <li><a href="#portfolio-title">Desain responsif</a></li>
+            </ul>
+          </div>
+          <div class="widget-box">
+            <h3 class="title">Tujuan</h3>
+            <p>
+              Terus berlatih membuat halaman web yang informatif, konsisten,
+              dan mudah digunakan.
+            </p>
+          </div>
+        </aside>
+      </section>
+      <footer>
+        <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+      </footer>
+    </div>
+  </body>
+</html>
